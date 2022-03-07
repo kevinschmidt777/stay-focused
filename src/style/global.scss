@@ -1,0 +1,25 @@
+@import "./import.scss";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: $color-black;
+  color: $color-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: $color-white;
+}
+
+.text-handwritten {
+  font-family: "Pacifico", cursive;
+}
+
+.text-primary {
+  color: $color-primary;
+}
