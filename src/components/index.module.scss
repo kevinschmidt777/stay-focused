@@ -2,14 +2,82 @@
 
 .index {
   position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .logo {
+    position: relative;
+    z-index: 2;
+    font-size: 2em;
+    font-family: "Pacifico", sans-serif;
+    text-align: center;
+
+    .focus {
+      position: absolute;
+      bottom: -(calc($spacer/1.6));
+      left: 50%;
+      white-space: nowrap;
+      transform: translateX(-50%);
+      color: $color-primary;
+      font-size: 0.7em;
+      font-family: "Montserrat", sans-serif;
+    }
   }
 
   .button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: $spacer;
+
+    button {
+      background-color: rgba($color-primary, 0.1);
+      backdrop-filter: blur(2px);
+      height: calc($spacer * 4);
+      width: calc($spacer * 4);
+      border-radius: calc($spacer * 4);
+      box-shadow: $shadow;
+      transition: $transition;
+      color: $color-font;
+      font-size: 3em;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba($color-primary, 0.15);
+        backdrop-filter: blur(5px);
+        color: $color-white;
+      }
+    }
+  }
+
+  .timer {
+    margin-top: calc($spacer/2);
+    color: $color-primary;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: "Montserrat", sans-serif;
+
+    &.invisible {
+      opacity: 0;
+    }
+
+    .skip {
+      margin-top: calc($spacer/4);
+      font-family: "Open Sans", sans-serif;
+      color: rgba($color-font, 0.7);
+      font-size: 0.7em;
+      transition: $transition;
+      cursor: pointer;
+
+      i {
+        position: relative;
+        top: 1px;
+      }
+
+      &:hover {
+        color: $color-font;
+      }
+    }
   }
 }
