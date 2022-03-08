@@ -10,6 +10,13 @@ const Index = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   /**
+   * Request browser permission for notification.
+   */
+  useEffect(() => {
+    if (Notification.permission !== "granted") Notification.requestPermission();
+  }, []);
+
+  /**
    * Counting...
    */
   useEffect(() => {
@@ -22,10 +29,18 @@ const Index = () => {
             // Switch to PAUSE
             setFocus("pause");
             setTimer(300);
+            new Notification("Stay focused", {
+              icon: "http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png",
+              body: "It's time for a little break!",
+            });
           } else {
             // SWITCH TO WORK
             setFocus("work");
             setTimer(1500);
+            new Notification("Stay focused", {
+              icon: "http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png",
+              body: "Let's continue work!",
+            });
           }
         }
       }, 1000);
