@@ -81,4 +81,14 @@
       }
     }
   }
+
+  .footer {
+    position: absolute;
+    bottom: calc($spacer/4);
+    right: calc($spacer/4);
+    font-size: 0.8em;
+    a {
+      color: $color-grey;
+    }
+  }
 }
