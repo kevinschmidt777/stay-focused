@@ -2,6 +2,7 @@ import style from "./index.module.scss";
 import bg from "../assets/bg.webp";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
+import { hookAlert } from "../hooks/alert";
 
 const Index = () => {
   const [timer, setTimer] = useState<number>(1500);
@@ -29,18 +30,12 @@ const Index = () => {
             // Switch to PAUSE
             setFocus("pause");
             setTimer(300);
-            new Notification("Stay focused", {
-              icon: "http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png",
-              body: "It's time for a little break!",
-            });
+            hookAlert("pause");
           } else {
             // SWITCH TO WORK
             setFocus("work");
             setTimer(1500);
-            new Notification("Stay focused", {
-              icon: "http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png",
-              body: "Let's continue work!",
-            });
+            hookAlert("work");
           }
         }
       }, 1000);
