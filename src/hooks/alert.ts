@@ -1,4 +1,4 @@
-import ring from "../assets/ring.mp3";
+import ring from "../assets/ring.wav";
 
 /**
  * Alert if timer is finish and changes phase.
