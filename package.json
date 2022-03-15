@@ -21,6 +21,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@capacitor/core": "^3.4.3",
+    "@capacitor/ios": "^3.4.3",
     "@fortawesome/fontawesome-free": "^6.0.0",
     "classnames": "^2.3.1",
     "ksface": "^3.2.3",
@@ -29,6 +31,7 @@
     "sass": "^1.49.9"
   },
   "devDependencies": {
+    "@capacitor/cli": "^3.4.3",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
