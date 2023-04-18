@@ -14,7 +14,7 @@
     "25 5"
   ],
   "homepage": "https://focus.kswebentwicklung.de",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
