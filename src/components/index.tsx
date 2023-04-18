@@ -84,7 +84,7 @@ const Index = () => {
           <div>Stay focused</div>
           {!pause && (
             <div className={style.focus}>
-              {focus === "work" ? "on working" : "on pausing"}
+              {focus === "work" ? "working" : "take a break"}
             </div>
           )}
         </div>
@@ -111,7 +111,7 @@ const Index = () => {
         </div>
       </div>
       <div className={style.footer}>
-        <a href="https://kswebentwicklung.de" target="_blank">
+        <a href="https://github.com/kevinschmidt777" target="_blank">
           Made with <i className="fa-solid fa-fw fa-heart" /> by Kevin Schmidt
         </a>
       </div>
