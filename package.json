@@ -1,8 +1,8 @@
 {
   "name": "stay-focused",
-  "description": "Stay focused while working - with the Pomodoro method.",
+  "description": "Stay focused while working - with the pomodoro method.",
   "author": "Kevin Schmidt",
-  "private": true,
+  "private": false,
   "keywords": [
     "kevin schmidt",
     "pomodoro",

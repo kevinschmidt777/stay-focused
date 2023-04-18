@@ -56,7 +56,7 @@
     margin-top: calc($spacer/2);
     color: $color-primary;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 2em;
     font-family: "Montserrat", sans-serif;
 
     &.invisible {
@@ -67,7 +67,7 @@
       margin-top: calc($spacer/4);
       font-family: "Open Sans", sans-serif;
       color: rgba($color-font, 0.7);
-      font-size: 0.7em;
+      font-size: 0.5em;
       transition: $transition;
       cursor: pointer;
 
